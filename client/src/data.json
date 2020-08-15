@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1000,
+    "name": "Product 0",
+    "category": "Bags",
+    "price": 8
+  },
+  {
+    "id": 1001,
+    "name": "Product 1",
+    "category": "Shoes",
+    "price": 89
+  },
+  {
+    "id": 1002,
+    "name": "Product 2",
+    "category": "Gear",
+    "price": 125
+  },
+  {
+    "id": 1003,
+    "name": "Product 3",
+    "category": "Apparel",
+    "price": 45
+  },
+  {
+    "id": 1004,
+    "name": "Product 4",
+    "category": "Bags",
+    "price": 55
+  },
+  {
+    "id": 1005,
+    "name": "Product 5",
+    "category": "Shoes",
+    "price": 70
+  },
+  {
+    "id": 1006,
+    "name": "Product 6",
+    "category": "Gear",
+    "price": 4
+  },
+  {
+    "id": 1007,
+    "name": "Product 7",
+    "category": "Bags",
+    "price": 9
+  },
+  {
+    "id": 1008,
+    "name": "Product 8",
+    "category": "Apparel",
+    "price": 15
+  },
+  {
+    "id": 1009,
+    "name": "Product 9",
+    "category": "Gear",
+    "price": 78
+  },
+  {
+    "id": 1010,
+    "name": "Product 10",
+    "category": "Shoes",
+    "price": 94
+  },
+  {
+    "id": 1011,
+    "name": "Product 11",
+    "category": "Apparel",
+    "price": 22
+  }
+
+]
