@@ -22,16 +22,19 @@ export default function App() {
       <MenuTrigger closeOnSelect={false}>
         <ActionButton margin="size-300">Show Category</ActionButton>
         <Menu selectionMode="multiple" selectedKeys={selected} onSelectionChange={setSelected}>
-          <Item key="Apparel">Apparel</Item>
-          <Item key="Shoes">Shoes</Item>
-          <Item key="Bags">Bags</Item>
-          <Item key="Gear">Gear</Item>
+          {[...new Set(data.map(prod => prod.category))].map(category => {
+            return <Item key={category}>{category}</Item>;
+          })}
         </Menu>
       </MenuTrigger>
       <Picker label="Choose price range" onSelectionChange={setPicked}>
-        <Item key="10">under $10</Item>
-        <Item key="25">under $25</Item>
-        <Item key="100">under $100</Item>
+        {Array.from(
+          Array(rowSize),
+          (_, dataIndex) =>
+            (dataIndex + 1) * Math.ceil(Math.max(...data.map(prod => prod.price)) / rowSize)
+        ).map(quartile => (
+          <Item key={quartile}>{`under ${quartile}`}</Item>
+        ))}
       </Picker>
       <p>Current selection (controlled): {[...selected].join(', ')}</p>
       <p>Current picker (controlled): {picked}</p>
